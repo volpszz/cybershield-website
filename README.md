@@ -1,18 +1,18 @@
 # CyberShield
 
-Landing page responsiva para a CyberShield, uma empresa fictícia de segurança para negócios. O site está na etapa visual e foi feito com HTML e CSS puros; ainda não usa JavaScript, dependências ou backend.
+Responsive landing page for CyberShield, a fictional business cybersecurity company. The current version is a static HTML and CSS site; it does not yet include JavaScript, dependencies, or a backend.
 
-## Como visualizar
+## Preview locally
 
-Na pasta do projeto, inicie um servidor estático:
+From the project directory, start a static server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Depois abra `http://localhost:8000` no navegador. Para encerrar o servidor, pressione `Ctrl+C` no terminal.
+Then open `http://localhost:8000` in your browser. Press `Ctrl+C` in the terminal to stop the server.
 
-## Estrutura
+## Project structure
 
 ```text
 .
@@ -23,25 +23,25 @@ Depois abra `http://localhost:8000` no navegador. Para encerrar o servidor, pres
     └── data-center-unsplash.jpg
 ```
 
-## O que já está pronto
+## Current features
 
-- Cabeçalho e navegação responsivos.
-- Destaque principal em duas colunas no desktop e empilhado em telas estreitas.
-- Imagem local de data center com texto alternativo.
-- Grade responsiva com quatro cartões de produtos.
-- Seção de contato e rodapé estilizados.
-- Estados visíveis de foco para navegação por teclado.
+- Responsive header and navigation.
+- Hero section with a two-column desktop layout and a stacked mobile layout.
+- Locally stored data-center image with descriptive alternative text.
+- Responsive grid with four product cards.
+- Styled contact section and footer.
+- Visible keyboard focus states.
 
-Os botões Email, WhatsApp e Discord são apenas visuais por enquanto; ainda não têm ações conectadas.
+The Email, WhatsApp, and Discord buttons are visual placeholders and are not connected to actions yet.
 
-## Próximos passos planejados
+## Planned next steps
 
-1. Aprender JavaScript com pequenas interações aplicadas ao próprio site.
-2. Implementar as interações da seção de contato.
-3. Planejar autenticação por e-mail e senha com backend ou serviço apropriado.
-4. Avaliar qualquer necessidade de criptografia a partir de um caso de uso definido; não implementar criptografia própria.
-5. Considerar TypeScript depois de aprender os fundamentos de JavaScript.
+1. Learn JavaScript by adding small interactions to this site.
+2. Implement the contact-section interactions.
+3. Plan email-and-password authentication with a backend or a suitable authentication service.
+4. Evaluate cryptography only for a clearly defined use case; do not implement custom cryptography.
+5. Consider TypeScript after learning the JavaScript fundamentals.
 
-## Créditos
+## Credits
 
-A imagem de data center em `img/data-center-unsplash.jpg` é de Kevin Ache, via Unsplash.
+The data-center photo in `img/data-center-unsplash.jpg` is by Kevin Ache via Unsplash.

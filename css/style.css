@@ -13,7 +13,7 @@ header{
     flex-wrap: wrap;
     gap: 16px;
     padding: 16px 32px;
-    background-color: var(--cor-principal);
+    background-color: var(--color-primary);
     color: white;
 
 
@@ -41,22 +41,22 @@ header nav a{
 
 header nav a:hover,
 header nav a:focus-visible{
-    background-color: var(--cor-destaque);
+    background-color: var(--color-accent);
 }
 
 /* ROOT,BODY */
 :root {
-    --cor-fundo: #f1f5f9;
-    --cor-texto: #1f2937;
-    --cor-principal: #102a43;
-    --cor-destaque: #1769aa;
+    --color-background: #f1f5f9;
+    --color-text: #1f2937;
+    --color-primary: #102a43;
+    --color-accent: #1769aa;
 }
 
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    color: #1f2937;
-    background-color: var(--cor-fundo)
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
 
@@ -93,7 +93,7 @@ main,
     padding: 10px 16px;
     border: 0;
     border-radius: 6px;
-    background-color: var(--cor-destaque);
+    background-color: var(--color-accent);
     color: white;
     font: inherit;
     cursor: pointer;
@@ -101,7 +101,7 @@ main,
 }
 .contact button:hover,
 .contact button:focus-visible{
-    background-color: var(--cor-principal);
+    background-color: var(--color-primary);
     transform: translateY(-2px);
 }
 
@@ -127,7 +127,7 @@ main h2{
 .product-card {
     padding: 24px;
     border: 1px solid #dbe3ec;
-    border-left: 4px solid var(--cor-destaque);
+    border-left: 4px solid var(--color-accent);
     border-radius: 8px;
     background-color: #f8fafc;
     transition: transform 180ms ease, box-shadow 180ms ease;
@@ -142,7 +142,7 @@ main h2{
 
 .about-us {
     padding: clamp(40px, 8vw, 72px) clamp(24px, 6vw, 56px);
-    background: linear-gradient(135deg, var(--cor-principal), var(--cor-destaque));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     color: white;
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
@@ -173,7 +173,7 @@ main h2{
     padding: 10px 16px;
     border-radius: 6px;
     background-color: white;
-    color: var(--cor-principal);
+    color: var(--color-primary);
     text-decoration: none;
 }
 
@@ -185,7 +185,7 @@ main h2{
 footer {
     margin-top: 40px;
     padding: 24px 32px;
-    background-color: var(--cor-principal);
+    background-color: var(--color-primary);
     color: white;
     text-align: center;
 }
