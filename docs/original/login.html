@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | CyberShield</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CyberShield</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="auth-page">
+        <h2>Log in</h2>
+        <p>Access your CyberShield account.</p>
+
+        <form id="login-form" method="post">
+            <label for="email">Email</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="username"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+            >
+
+            <button
+                id="toggle-password"
+                type="button"
+                aria-controls="password"
+                aria-pressed="false"
+            >Show password</button>
+
+            <button type="submit">Log in</button>
+
+            <p id="login-message" role="status"></p>
+        </form>
+        <p>Don't have an account? <a href="register.html">Create account</a></p>
+    </main>
+</body>
+</html>

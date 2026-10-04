@@ -1,0 +1,21 @@
+{
+  "name": "cybershield-learning-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CyberShield full-stack learning project",
+  "scripts": {
+    "setup": "npm --prefix backend install",
+    "start": "npm --prefix backend start",
+    "dev": "npm --prefix backend run dev",
+    "test": "npm --prefix backend test && node --test public/tests/*.mjs",
+    "test:e2e": "node scripts/e2e.cjs",
+    "format": "prettier --write public/**/*.html public/css/*.css public/js/*.js"
+  },
+  "engines": {
+    "node": ">=24.13.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "prettier": "^3.9.9"
+  }
+}

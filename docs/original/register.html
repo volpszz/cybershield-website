@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account | CyberShield</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/register.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CyberShield</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+<main class="auth-page">
+    <h2>Create account</h2>
+    <p>Get started with CyberShield.</p>
+
+    <form id="register-form" method="post">
+        <label for="email">Email</label>
+        <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="username"
+            required
+        >
+
+        <label for="password">Password</label>
+        <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            required
+        >
+
+        <label for="confirm-password">Confirm password</label>
+        <input
+            id="confirm-password"
+            name="confirmPassword"
+            type="password"
+            autocomplete="new-password"
+            required
+        >
+
+        <button type="submit">Create account</button>
+        <p id="register-message" role="status"></p>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+</main>
+</body>
+</html>

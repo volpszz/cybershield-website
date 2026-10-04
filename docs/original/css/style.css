@@ -205,3 +205,33 @@ footer {
         gap: 24px;
     }
 }
+
+.auth-page {
+    display: block;
+    max-width: 440px;
+}
+
+.auth-page form {
+    display: grid;
+    gap: 12px;
+}
+
+.auth-page input,
+.auth-page button {
+    padding: 12px;
+    border: 1px solid #64748b;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.auth-page button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.auth-page input:focus-visible,
+.auth-page button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+}

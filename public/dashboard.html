@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#08121e" />
+        <meta
+            name="description"
+            content="CyberShield — business security, infrastructure, and tailored solutions."
+        />
+        <title>Your workspace | CyberShield</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script type="module" src="/js/dashboard.js"></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="/" aria-label="CyberShield home"
+                    ><span class="brand-mark" aria-hidden="true"
+                        >C<span>↗</span></span
+                    >CyberShield<span class="brand-dot">.</span></a
+                >
+                <nav aria-label="Workspace navigation">
+                    <a href="/#services">Services</a
+                    ><a href="/#contact">New request ↗</a
+                    ><button
+                        class="button secondary small"
+                        id="logout"
+                        type="button"
+                        disabled
+                    >
+                        Log out
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="container dashboard">
+            <div class="dashboard-heading">
+                <div>
+                    <p class="eyebrow">YOUR WORKSPACE</p>
+                    <h1 id="welcome">Your account.</h1>
+                    <p>A clear view of your profile and saved requests.</p>
+                </div>
+                <span class="badge">Local demo</span>
+            </div>
+            <p
+                class="status"
+                id="page-status"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+                Loading your account…
+            </p>
+            <button
+                id="retry-session"
+                class="button secondary"
+                type="button"
+                hidden
+            >
+                Try again
+            </button>
+            <div class="dashboard-grid" id="account-content" hidden>
+                <section
+                    class="panel profile-panel"
+                    aria-labelledby="profile-title"
+                >
+                    <div class="form-heading">
+                        <p class="eyebrow">ACCOUNT DETAILS</p>
+                        <h2 id="profile-title">Your profile</h2>
+                        <p id="member-since"></p>
+                    </div>
+                    <form id="profile-form" method="post">
+                        <div class="field">
+                            <label for="name">Full name</label
+                            ><input
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="100"
+                                required
+                            />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email address</label
+                            ><input
+                                id="email"
+                                name="email"
+                                type="email"
+                                readonly
+                                aria-describedby="email-hint"
+                            />
+                            <p class="hint" id="email-hint">
+                                Your sign-in email cannot be changed here.
+                            </p>
+                        </div>
+                        <div class="field">
+                            <label for="company"
+                                >Company
+                                <span class="optional">(optional)</span></label
+                            ><input
+                                id="company"
+                                name="company"
+                                autocomplete="organization"
+                                maxlength="120"
+                            />
+                        </div>
+                        <button class="button full" type="submit">
+                            Save profile
+                        </button>
+                        <p
+                            id="profile-status"
+                            class="status"
+                            role="status"
+                            aria-live="polite"
+                            aria-atomic="true"
+                        ></p>
+                    </form>
+                </section>
+                <section
+                    class="panel requests-panel"
+                    aria-labelledby="requests-title"
+                >
+                    <div class="requests-heading">
+                        <div>
+                            <p class="eyebrow">YOUR CONVERSATIONS</p>
+                            <h2 id="requests-title">Saved requests</h2>
+                        </div>
+                        <button
+                            class="button secondary small"
+                            id="refresh-inquiries"
+                            type="button"
+                        >
+                            Refresh
+                        </button>
+                    </div>
+                    <p class="hint">
+                        Requests submitted while signed in appear here. They are
+                        saved in the local application, not emailed.
+                    </p>
+                    <p
+                        class="status"
+                        id="inquiries-status"
+                        role="status"
+                        aria-live="polite"
+                        aria-atomic="true"
+                    ></p>
+                    <div id="inquiries-list"></div>
+                    <a class="button secondary" href="/#contact"
+                        >Start a new request ↗</a
+                    >
+                </section>
+            </div>
+            <noscript
+                ><p>JavaScript is required to load your account.</p></noscript
+            >
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <a class="brand footer-brand" href="/"
+                    >CyberShield<span class="brand-dot">.</span></a
+                >
+                <p>
+                    Learning project · Local demo application.<br />No live
+                    security monitoring or protection is provided.
+                </p>
+                <a href="/#contact">Start a conversation ↗</a>
+            </div>
+        </footer>
+    </body>
+</html>

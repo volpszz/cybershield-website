@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#08121e" />
+        <meta
+            name="description"
+            content="CyberShield — business security, infrastructure, and tailored solutions."
+        />
+        <title>Create account | CyberShield</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script type="module" src="/js/register.js"></script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="/" aria-label="CyberShield home"
+                    ><span class="brand-mark" aria-hidden="true"
+                        >C<span>↗</span></span
+                    >CyberShield<span class="brand-dot">.</span></a
+                >
+                <nav aria-label="Account navigation">
+                    <a href="/">← Back to home</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="container auth-layout">
+            <aside class="auth-story">
+                <p class="eyebrow">BUSINESS SECURITY / CYBERSHIELD</p>
+                <h2>A clear view.<br />A better next step.</h2>
+                <p>
+                    Your account brings your profile and saved service requests
+                    into one place.
+                </p>
+                <div class="auth-image">
+                    <img
+                        src="/img/data-center-unsplash.jpg"
+                        alt="Illuminated server racks in a data center"
+                    />
+                </div>
+                <p class="mono auth-caption">YOUR SYSTEMS. YOUR PRIORITIES.</p>
+            </aside>
+            <section class="auth-panel panel" aria-labelledby="auth-title">
+                <p class="eyebrow">GET STARTED</p>
+                <h1 id="auth-title">Create your account</h1>
+                <p>Keep your details and service requests in one place.</p>
+                <form id="register-form" method="post">
+                    <div class="field">
+                        <label for="name">Full name</label
+                        ><input
+                            id="name"
+                            name="name"
+                            type="text"
+                            autocomplete="name"
+                            minlength="2"
+                            maxlength="100"
+                            required
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address</label
+                        ><input
+                            id="email"
+                            name="email"
+                            type="email"
+                            autocomplete="username"
+                            maxlength="254"
+                            required
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="company"
+                            >Company
+                            <span class="optional">(optional)</span></label
+                        ><input
+                            id="company"
+                            name="company"
+                            type="text"
+                            autocomplete="organization"
+                            maxlength="120"
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <div class="password-wrap">
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                minlength="15"
+                                maxlength="128"
+                                autocomplete="new-password"
+                                aria-describedby="password-hint"
+                                required
+                            /><button
+                                type="button"
+                                data-password-toggle
+                                aria-controls="password"
+                                aria-label="Show password"
+                                aria-pressed="false"
+                            >
+                                Show
+                            </button>
+                        </div>
+                    </div>
+                    <p class="hint" id="password-hint">
+                        Use 15–128 characters. A long, unique passphrase is a
+                        good choice.
+                    </p>
+                    <div class="field">
+                        <label for="confirm-password">Confirm password</label>
+                        <div class="password-wrap">
+                            <input
+                                id="confirm-password"
+                                name="confirm-password"
+                                type="password"
+                                minlength="15"
+                                maxlength="128"
+                                autocomplete="new-password"
+                                aria-describedby="password-hint"
+                                required
+                            /><button
+                                type="button"
+                                data-password-toggle
+                                aria-controls="confirm-password"
+                                aria-label="Show confirm password"
+                                aria-pressed="false"
+                            >
+                                Show
+                            </button>
+                        </div>
+                    </div>
+                    <button class="button full" type="submit">
+                        Create account <span aria-hidden="true">↗</span>
+                    </button>
+                    <p
+                        class="status"
+                        id="register-status"
+                        role="status"
+                        aria-live="polite"
+                        aria-atomic="true"
+                    ></p>
+                    <noscript
+                        ><p>
+                            JavaScript is required to sign in or create an
+                            account.
+                        </p></noscript
+                    >
+                </form>
+                <p class="auth-switch">
+                    Already have an account? <a href="/login.html">Log in</a>
+                </p>
+                <p class="hint">
+                    Local learning application. No real security service is
+                    activated.
+                </p>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <a class="brand footer-brand" href="/"
+                    >CyberShield<span class="brand-dot">.</span></a
+                >
+                <p>
+                    Learning project · Local demo application.<br />No live
+                    security monitoring or protection is provided.
+                </p>
+                <a href="/#contact">Start a conversation ↗</a>
+            </div>
+        </footer>
+    </body>
+</html>
